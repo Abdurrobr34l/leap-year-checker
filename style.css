@@ -1,3 +1,12 @@
+/* *VARIABLES */
+/* :root {
+  --primary: ;
+  --Secondary: ;
+  --accent-clr: ;
+  --bg-clr: ;
+} */
+
+/* *CSS RESET AND RE-USEABLE UTILITIES CLASS */
 *,
 *::before,
 *::after {
