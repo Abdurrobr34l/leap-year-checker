@@ -111,7 +111,7 @@ body {
   margin: 140px auto;
   padding: 40px 60px;
   width: 80%;
-  max-width: 450px;
+  max-width: 600px;
   background: var(--glass-bg);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -133,19 +133,22 @@ p {
 }
 
 main p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .input-group {
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns for inputs */
+  gap: 12px; /* grid er gap */
   margin-top: 10px;
 }
 
 input {
+  /* flex: 1; */
   padding: 10px 12px;
+  font-size: 1rem;
   border-radius: 10px;
   border: none;
-  font-size: 1rem;
   outline: none;
 }
 
