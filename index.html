@@ -37,7 +37,20 @@
   <link rel="icon" href="./favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="flex justify-content-center align-items-center">
+
+  <div class="container text-center">
+    <h1>Leap Year Checker</h1>
+    <p>
+      A leap year is a year that has 366 days instead of the usual 365. It occurs every 4 years,
+      except for years divisible by 100 but not by 400.
+    </p>
+    <div class="input-group grid">
+      <input type="number" placeholder="Enter a year" maxlength="4" pattern="\d{4}">
+      <input type="text" placeholder="Result will appear here" readonly>
+    </div>
+  </div>
+
 
   <script src="./script.js"></script>
 </body>
