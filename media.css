@@ -1,34 +1,24 @@
-/* FOR SMALL MOBILE DEVICES (UP TO 375PX) */
-@media (max-width: 375px) {
-  /* STYLES FOR 375PX AND SMALLER SCREENS */
-}
+/* Responsive for small devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 25px;
+    width: 90%;
+  }
 
-/* FOR MOBILE DEVICES BETWEEN 376PX AND 576PX */
-@media (min-width: 376px) and (max-width: 576px) {
-  /* STYLES FOR SCREENS BETWEEN 376PX AND 576PX */
-}
+  h1 {
+    font-size: 1.4rem;
+  }
 
-/* FOR TABLETS BETWEEN 577PX AND 768PX */
-@media (min-width: 577px) and (max-width: 768px) {
-  /* STYLES FOR SCREENS BETWEEN 577PX AND 768PX */
-}
+  p {
+    font-size: 0.9rem;
+  }
 
-/* FOR TABLETS AND SMALL DESKTOPS BETWEEN 769PX AND 1024PX */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* STYLES FOR SCREENS BETWEEN 769PX AND 1024PX */
-}
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* FOR DESKTOPS BETWEEN 1025PX AND 1280PX */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* STYLES FOR SCREENS BETWEEN 1025PX AND 1280PX */
-}
-
-/* FOR LARGER DESKTOPS BETWEEN 1281PX AND 1536PX */
-@media (min-width: 1281px) and (max-width: 1536px) {
-  /* STYLES FOR SCREENS BETWEEN 1281PX AND 1536PX */
-}
-
-/* FOR EXTRA-LARGE DESKTOPS ABOVE 1536PX */
-@media (min-width: 1537px) {
-  /* STYLES FOR SCREENS ABOVE 1536PX */
+  .input-group input {
+    width: 100%;
+  }
 }
