@@ -21,4 +21,11 @@
   .input-group input {
     width: 100%;
   }
+
+  /** FOOTER START */
+  .footer {
+    width: 90%;
+    font-size: 0.85rem;
+    padding: 12px 15px;
+  }
 }
