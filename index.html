@@ -46,8 +46,9 @@
       except for years divisible by 100 but not by 400.
     </p>
     <div class="input-group grid">
-      <input type="number" placeholder="Enter a year" maxlength="4" pattern="\d{4}">
-      <input type="text" placeholder="Result will appear here" readonly>
+      <input type="number" id="leap-year-input" placeholder="Enter a year" maxlength="4" pattern="\d{4}">
+      <button id="leap-year-btn">Check</button>
+      <input type="text" id="leap-year-result-input" placeholder="Result will appear here" readonly>
     </div>
   </main>
 
@@ -61,3 +62,19 @@
 </body>
 
 </html>
+
+
+<!-- // function leapYear(year) {
+
+//   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//     return (year + " is a Leap Year");
+//   } else {
+//     return (year + " is not a Leap Year");
+//   }
+
+// }
+// leapYear(gotYear);
+// console.log("This method is 100% accurate--------");
+// console.log(leapYear(1900));
+// console.log(leapYear(1996));
+// console.log(leapYear(2000)); -->
