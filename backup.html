@@ -28,7 +28,7 @@
     content="Quickly check if a year is a leap year with our modern Leap Year Checker.">
   <meta property="twitter:image" content="https://abdurrobr34l.github.io/leap-year-checker/preview-image.jpg">
 
-  <title>Is it a Leap Year?</title>
+  <title>Is it a Leap Year? | Backup</title>
   <!-- *LINKS -->
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./media.css">
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-<a href="./backup.html">Backup</a>
+
   <main class="container text-center">
     <h1>Leap Year Checker</h1>
     <p>
@@ -46,8 +46,10 @@
       except for years divisible by 100 but not by 400.
     </p>
     <div class="input-group grid">
-      <input type="number" id="leap-year-input" placeholder="Enter a year" min="1" max="9999" step="1"
-        oninput="if(this.value.length > 4) this.value = this.value.slice(0,4);">
+      <input type="number" id="leap-year-input" placeholder="Enter a year"   min="1" 
+  max="9999" 
+  step="1"
+  oninput="if(this.value.length > 4) this.value = this.value.slice(0,4);">
       <button id="leap-year-btn" style="display: none;">Check</button>
       <input type="text" id="leap-year-result-input" placeholder="Result will appear here" readonly>
     </div>
@@ -60,6 +62,42 @@
 
 
   <script src="./script.js"></script>
+  <script>
+    const LeapYearInput = document.getElementById('leap-year-input');
+const LeapYearResultInput = document.getElementById('leap-year-result-input');
+const LeapYearButtonAutoEnter = document.getElementById('leap-year-btn');
+
+const LeapYearButton = document.getElementById('leap-year-btn').addEventListener('click', function () {
+  // console.log(LeapYearInput);  //? Checking if onclick is working when button is clicked
+  let gotYear = parseInt(LeapYearInput.value)  //? Saved user given year value
+  // console.log(gotYear);
+
+  //? Now running the user given value inside of the condition to find out is it leap year/not
+  function leapYear(gotYear) {
+
+    if ((gotYear % 4 === 0 && gotYear % 100 !== 0) || gotYear % 400 === 0) {
+      // return (gotYear + " is a Leap Year");
+      return ("Is a Leap Year");
+    } else {
+      // return (gotYear + " is not a Leap Year");
+      return ("Is not a Leap Year");
+    }
+
+  }
+  const result = (leapYear(gotYear));  //? Saved condition result in this variable to show
+  // console.log(result)  //? Checking is condition value is saved/not
+
+  LeapYearResultInput.value = result  //? Added the condition result inside the result input
+  console.log(result);
+
+})
+
+LeapYearInput.addEventListener('input', function () {
+  if (this.value.length === 4) {
+    LeapYearButtonAutoEnter.click();
+  }
+})
+  </script>
 </body>
 
 </html>
